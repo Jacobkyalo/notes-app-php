@@ -73,6 +73,7 @@ if(isset($_POST['submit'])){
             />
             <i class="bi bi-person"></i>
           </div>
+          <p id="username-error" class="register-error"></p>
         </div>
         <div class="form-group">
           <label for="email">Email Address</label>
@@ -85,6 +86,7 @@ if(isset($_POST['submit'])){
             />
             <i class="bi bi-envelope"></i>
           </div>
+          <p id="email-error" class="register-error"></p>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -97,6 +99,7 @@ if(isset($_POST['submit'])){
             />
             <i class="bi bi-lock"></i>
           </div>
+          <p id="password-error" class="register-error"></p>
         </div>
         <div class="form-group">
           <label for="confirmpassword">Confirm Password</label>
@@ -109,6 +112,7 @@ if(isset($_POST['submit'])){
             />
             <i class="bi bi-lock"></i>
           </div>
+          <p id="confirmpassword-error" class="register-error"></p>
         </div>
         <button type="submit" class="btn" name="submit">Register</button>
         <p class="navigate-text">

@@ -242,3 +242,8 @@ textarea::placeholder {
 .display {
   display: none;
 }
+/* error class */
+.register-error {
+  color: #ff0000;
+  margin-top: 2px;
+}
