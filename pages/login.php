@@ -48,7 +48,7 @@ if(isset($_POST['submit'])) {
   </head>
   <body>
     <div class="wrapper">
-      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="form">
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="form" id="login__form">
         <header class="header">
           <h1>Notes App</h1>
         </header>
@@ -66,6 +66,7 @@ if(isset($_POST['submit'])) {
             />
             <i class="bi bi-person"></i>
           </div>
+          <p id="login-username-error" class="error"></p>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -78,6 +79,7 @@ if(isset($_POST['submit'])) {
             />
             <i class="bi bi-lock"></i>
           </div>
+          <p id="login-password-error" class="error"></p>
         </div>
         <button type="submit" class="btn" name="submit">Login</button>
         <p class="navigate-text">
@@ -85,6 +87,6 @@ if(isset($_POST['submit'])) {
         </p>
       </form>
     </div>
-    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>

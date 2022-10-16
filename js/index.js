@@ -1,7 +1,6 @@
-const body = document.body;
 const registerForm = document.getElementById("register__form");
-const loginForm = document.getElementById("login__form");
 
+const body = document.body;
 body.style.backgroundColor = "#111";
 
 //listen for register form submit
@@ -31,4 +30,12 @@ registerForm.addEventListener("submit", (e) => {
   } else {
     console.log("Form can be submitted 🥰");
   }
+
+  //remove errors
+  setTimeout(() => {
+    usernameError.textContent = "";
+    emailError.textContent = "";
+    passwordError.textContent = "";
+    confirmPasswordError.textContent = "";
+  }, 1000);
 });
