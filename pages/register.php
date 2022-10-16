@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
   </head>
   <body>
     <div class="wrapper">
-      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" style="padding: 0.4rem 2rem" class="form">
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" style="padding: 0.4rem 2rem" class="form" id="register__form">
         <header class="header">
           <h1>Notes App</h1>
         </header>
@@ -99,7 +99,7 @@ if(isset($_POST['submit'])){
           </div>
         </div>
         <div class="form-group">
-          <label for="confirmpassword">Email Address</label>
+          <label for="confirmpassword">Confirm Password</label>
           <div class="input-group">
             <input
               type="password"

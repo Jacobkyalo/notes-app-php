@@ -61,7 +61,7 @@ if(isset($_POST['submit'])) {
             <input
               type="text"
               name="username"
-              id="username"
+              id="login-username"
               placeholder="Username"
             />
             <i class="bi bi-person"></i>
@@ -73,7 +73,7 @@ if(isset($_POST['submit'])) {
             <input
               type="password"
               name="password"
-              id="password"
+              id="login-password"
               placeholder="Password"
             />
             <i class="bi bi-lock"></i>
