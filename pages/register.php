@@ -35,8 +35,9 @@ if(isset($_POST['submit'])){
         header('Location: login.php');
       }
     }
+   }
   }
-}
+// }
 ?>
 
 <!DOCTYPE html>
@@ -121,5 +122,6 @@ if(isset($_POST['submit'])){
       </form>
     </div>
     <script src="../js/index.js"></script>
+   
   </body>
 </html>
